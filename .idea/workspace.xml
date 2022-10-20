@@ -4,20 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca0facae-96be-43bd-aa2f-a9741733bf53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DZ3/AutomationPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DZ3/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
+    <list default="true" id="ca0facae-96be-43bd-aa2f-a9741733bf53" name="Changes" comment="Dz3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DZ4/AreaOfTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DZ4/AreaOfTriangleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dz3" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2G1p2fyEdrOjqSTToAjwruLMB8j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,9 +48,22 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="AutomationPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.DZ3.AutomationPractice" />
+  <component name="RunManager" selected="JUnit.AreaOfTriangleTest">
+    <configuration name="AreaOfTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DZ4.AreaOfTriangle" />
+      <module name="WebUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DZ4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.DZ3.Mail" />
       <module name="WebUI" />
       <extension name="coverage">
         <pattern>
@@ -45,9 +75,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AreaOfTriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DZ4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DZ4" />
+      <option name="MAIN_CLASS_NAME" value="DZ4.AreaOfTriangleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AreaOfTriangleTest.negativeTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DZ4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DZ4" />
+      <option name="MAIN_CLASS_NAME" value="DZ4.AreaOfTriangleTest" />
+      <option name="METHOD_NAME" value="negativeTest1(double,double,double)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AreaOfTriangleTest.negativeTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DZ4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DZ4" />
+      <option name="MAIN_CLASS_NAME" value="DZ4.AreaOfTriangleTest" />
+      <option name="METHOD_NAME" value="negativeTest2(double,double,double)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AutomationPractice" />
+        <item itemvalue="JUnit.AreaOfTriangleTest" />
+        <item itemvalue="JUnit.AreaOfTriangleTest.negativeTest2" />
+        <item itemvalue="JUnit.AreaOfTriangleTest.negativeTest1" />
+        <item itemvalue="Application.Mail" />
+        <item itemvalue="Application.AreaOfTriangle" />
       </list>
     </recent_temporary>
   </component>
@@ -60,6 +141,14 @@
       <option name="presentableId" value="Default" />
       <updated>1665565741199</updated>
     </task>
+    <task id="LOCAL-00001" summary="Dz3">
+      <created>1665733660946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665733660946</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,5 +161,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dz3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dz3" />
   </component>
 </project>
