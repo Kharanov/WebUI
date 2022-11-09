@@ -92,7 +92,7 @@ public class GoogleTest {
     }
     @Order(3)
     @Test
-    void toCheckFlaggedMessages() throws InterruptedException {
+    void toCheckFlaggedMessagesTest() throws InterruptedException {
         authorization(driver, wait);
         driver.findElement(By.xpath("//a[.='Почта'][1]")).click();
         driver.findElement(By.xpath("(//span[@data-tooltip='Не помечено'])[1]")).click();
