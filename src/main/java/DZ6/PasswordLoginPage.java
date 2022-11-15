@@ -1,5 +1,7 @@
 package DZ6;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,9 +19,12 @@ public class PasswordLoginPage extends BasePage {
     @FindBy(xpath = "//span[.='Далее']")
     private WebElement nextButton;
 
-    public GoogleWithLoginPage inputPassword(String password){
+    @Step("Ввод пароля")
+    public GoogleWithLoginPage inputPassword(String password) {
         wait.until(ExpectedConditions.elementToBeClickable(passwordField));
+        Allure.step("Ввод Пароля");
         passwordField.sendKeys(password);
+        Allure.step("Клик далее");
         nextButton.click();
         return new GoogleWithLoginPage(driver);
     }

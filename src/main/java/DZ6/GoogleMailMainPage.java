@@ -1,5 +1,7 @@
 package DZ6;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +19,7 @@ public class GoogleMailMainPage extends BasePage {
 
     public GoogleMailMainPage copyText() {
         wait.until(ExpectedConditions.visibilityOf(copyText));
+        Allure.step("Копирование текста");
         actions.moveToElement(copyText)
                 .moveByOffset(-300, 0)
                 .clickAndHold()
@@ -52,7 +55,9 @@ public class GoogleMailMainPage extends BasePage {
     private WebElement FlaggedLetter;
 
     public FlaggedPage flagMessage() {
+        Allure.step("Отметить входящее");
         noFlag.click();
+        Allure.step("Перейти в папку Помеченные");
         FlaggedLetter.click();
         return new FlaggedPage(driver);
     }
@@ -66,12 +71,15 @@ public class GoogleMailMainPage extends BasePage {
     @FindBy(xpath = "//*[.='Раздел для личных сообщений и писем, которые не попали в другие категории.']")
     private WebElement inboxCleaned;
 
+    @Step("Очистка папки 'Входящие' ")
     public void clearInbox() throws InterruptedException {
+        Allure.step("Выбрать все письма");
         checkboxAllLetter.click();
         wait.until(ExpectedConditions.elementToBeClickable(deleteAll));
+        Allure.step("Удалить все входящие");
         deleteAll.click();
         Thread.sleep(2000);
-        wait.until(ExpectedConditions.elementToBeClickable(inboxCleaned));
+        wait.until(ExpectedConditions.visibilityOf(inboxCleaned));
         Assertions.assertTrue(inboxCleaned.isDisplayed());
 
     }

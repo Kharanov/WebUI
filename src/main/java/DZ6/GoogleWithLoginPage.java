@@ -1,6 +1,8 @@
 package DZ6;
 
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,12 +20,16 @@ public class GoogleWithLoginPage extends BasePage {
     @FindBy(xpath = "//div/a[.='Почта']")
     private WebElement mailButton;
 
+    @Step("Проверка входа")
     public void logIn() {
         wait.until(ExpectedConditions.visibilityOf(login));
         Assertions.assertTrue(login.isDisplayed());
     }
+
+    @Step("Вход в почту")
     public GoogleMailMainPage signInMail() {
         wait.until(ExpectedConditions.visibilityOf(mailButton));
+        Allure.step("Почта клик");
         mailButton.click();
         return new GoogleMailMainPage(driver);
     }
