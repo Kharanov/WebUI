@@ -1,5 +1,7 @@
 package DZ6;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -18,8 +20,11 @@ public class NumberOrEmailLoginPage extends BasePage {
     @FindBy(xpath = "//span[.='Далее']")
     private WebElement nextButton;
 
+    @Step("Ввод Email")
     public PasswordLoginPage inputEmail(String login) {
+        Allure.step("Ввод емэйла");
         numberOrEmailField.sendKeys(login);
+        Allure.step("Клик Далее");
         nextButton.click();
         return new PasswordLoginPage(driver);
 
